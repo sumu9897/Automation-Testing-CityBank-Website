@@ -109,7 +109,7 @@ public class UrlPage extends DriverSetup {
 
     @Test (priority = 7 )
     public void OpenTreasury() throws InterruptedException {
-        browser.get("https://www.thecitybank.com/account/freelancers-solutions#treasury-submenu");
+        browser.get("https://www.thecitybank.com/financial-literacy#treasury-submenu");
         Thread.sleep(2000);
 
         System.out.println(browser.getTitle());
@@ -125,7 +125,7 @@ public class UrlPage extends DriverSetup {
 
     @Test (priority = 8 )
     public void OpenPriorityBanking() throws InterruptedException {
-        browser.get("https://www.thecitybank.com/account/freelancers-solutions#prioritybanking");
+        browser.get("https://www.thecitybank.com/overnight-deposits#prioritybanking");
         Thread.sleep(2000);
 
         System.out.println(browser.getTitle());
