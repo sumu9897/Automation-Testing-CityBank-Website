@@ -19,6 +19,11 @@ public class HomePage extends DriverSetup {
         Select select = new Select(dropdown);
         select.selectByValue("7");
         Thread.sleep(1000);
+
+        dropdown = browser.findElement(By.id("for"));
+        Select select2 = new Select(dropdown);
+        select2.selectByVisibleText("Student File");
+        Thread.sleep(1000);
     }
 
 
