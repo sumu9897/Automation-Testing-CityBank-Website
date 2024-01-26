@@ -35,8 +35,24 @@ public class HomePage extends DriverSetup {
         browser.findElement(By.name("amount_usd")).sendKeys("11");
         Thread.sleep(2000);
 
+    }
 
+    @Test (priority = 2)
+    public void CalculateEMI() throws InterruptedException {
+        browser.get("https://www.thecitybank.com/home");
+        Thread.sleep(2000);
 
+        browser.findElement(By.name("loan-amount")).sendKeys("100000");
+        Thread.sleep(500);
+
+        browser.findElement(By.name("tenor")).sendKeys("5");
+        Thread.sleep(500);
+
+        browser.findElement(By.name("rate")).sendKeys("5");
+        Thread.sleep(500);
+
+        browser.findElement(By.id("emi-calculate-btn")).click();
+        Thread.sleep(5000);
 
     }
 }
